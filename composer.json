@@ -1,0 +1,33 @@
+{
+	"name" : "pluf/oauth2",
+	"description" : "Pluf OAuth2 login backend",
+	"type" : "library",
+	"homepage" : "http://pluf.ir",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Mostafa Barmshory",
+			"email" : "mostafa.barmshory@dpq.co.ir"
+		}, {
+			"name" : "Mohammad Hadi Mansouri",
+			"email" : "mohammad.hadi.mansouri@dpq.co.ir"
+		}
+	],
+	"require" : {
+		"pluf/core" : "~3.0",
+		"league/oauth2-google" : "~2.2",
+		"league/oauth2-instagram" : "~2.0",
+		"league/oauth2-linkedin" : "~4.1",
+		"league/oauth2-github" : "~2.0",
+		"league/oauth2-facebook" : "~2.0"
+	},
+	"require-dev" : {
+		"pluf/test" : "~3.0"
+	},
+	"keywords" : [
+		"pluf",
+		"oauth2"
+	],
+	"include-path" : [
+		"src/"
+	]
+}
