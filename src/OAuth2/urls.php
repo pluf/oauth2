@@ -28,10 +28,28 @@ return array (
      * Servers
      */
 	array(
-        'regex' => '#^/servers$#',
-        'model' => 'OAuth2_Views_Servers',
-        'method' => 'find',
-        'http-method' => 'GET'
+	    'regex' => '#^/servers$#',
+	    'model' => 'Pluf_Views',
+	    'method' => 'findObject',
+	    'http-method' => 'GET',
+	    'params' => array(
+	        'model' => 'OAuth2_Server',
+	        'listFilters' => array(
+	            'id',
+	            'name',
+	            'title'
+	        ),
+	        'searchFields' => array(
+	            'name',
+	            'title',
+	            'description'
+	        ),
+	        'sortFields' => array(
+	            'id',
+	            'name',
+	            'title'
+	        )
+	    )
     ),
 	array(
         'regex' => '#^/servers$#',

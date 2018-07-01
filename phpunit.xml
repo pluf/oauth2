@@ -2,9 +2,7 @@
 <phpunit colors="true">
 	<testsuites>
 		<testsuite name="Pluf">
-			<directory>tests/Geometry/</directory>
-			<directory>tests/Point/</directory>
-			<directory>tests/Polygon/</directory>
+			<directory>tests/Servers_REST/</directory>
 		</testsuite>
 	</testsuites>
 

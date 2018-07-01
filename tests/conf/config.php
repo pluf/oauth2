@@ -2,9 +2,7 @@
 // $cfg = include 'mysql.config.php';
 $cfg = include 'sqlite.config.php';
 
-
-
-$cfg['test'] = false;
+$cfg['test'] = true;
 $cfg['timezone'] = 'Europe/Berlin';
 
 // Set the debug variable to true to force the recompilation of all
@@ -15,11 +13,8 @@ $cfg['installed_apps'] = array(
     'User',
     'Role',
     'Group',
-    'Monitor',
-    'Tenant'
+    'OAuth2'
 );
-
-$cfg['multitenant'] = true;
 
 /*
  * Middlewares
