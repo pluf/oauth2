@@ -1,0 +1,9 @@
+{
+  "name": "OAuth2",
+  "title": "OAuth2 authentication backend Plugin",
+  "model": [
+    "OAuth2_Server",
+    "OAuth2_Connection"
+  ],
+  "permisson": []
+}
